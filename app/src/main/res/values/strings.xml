@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Email">Email</string>
+    <string name="Enter_your_email">Your email address</string>
+    <string name="Password">Password</string>
+    <string name="Enter_password">Your password</string>
+    <string name="Login">Login</string>
+    <string name="Create_account">Create Account</string>
+    <string name="Shoe_Store">Shoe Store</string>
+    <string name="Welcome_text">Welcome to the shoe store app, your one stop shop for managing your shoe store.
+        \n\nWe hope that you will love using this app as much as we loved creating it.
+        \n\nThis app functions like a typical Android app so you should have no trouble learning to use it. In fact, it should be self-explanatory.</string>
+    <string name="Continue">Continue</string>
+    <string name="Welcome_store">Welcome !!!</string>
+    <string name="Instructions">Managing Your Inventory:</string>
+    <string name="Instruction_text">The following screen will show you a list of your shoe inventory.
+        \n\nYou can add additional items to the list by clicking on the red button (+).
+        \n\nAfter adding the new item, you will be returned to the inventory list.
+        \n\nYour newly added item will appear at the bottom of the list.</string>
+    <string name="Start">Start</string>
+    <string name="Login_Fragment_Title">Login</string>
+    <string name="Welcome_Fragment_Title">Welcome!</string>
+    <string name="Instructions_Fragment_Title">Instructions</string>
+    <string name="FAB_description">Add shoe button</string>
+    <string name="ShoeList_Fragment_Title">Shoe List</string>
+    <string name="Logout">Logout</string>
+    <string name="Shoe_Name">Shoe Name</string>
+    <string name="Company">Company</string>
+    <string name="Shoe_Size">Shoe Size</string>
+    <string name="Description">Description</string>
+    <string name="Enter_New_Shoe_Details">Please enter new shoe details:</string>
+    <string name="Add">Add</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Detail_Fragment_Title">Add Shoe</string>
+    <string name="Your_Shoe_Inventory">Your Shoe Inventory:</string>
+    <string name="Size">", Size: "</string>
+    <string name="Space">" "</string>
+</resources>
