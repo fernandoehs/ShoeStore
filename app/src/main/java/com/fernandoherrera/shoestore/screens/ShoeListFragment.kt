@@ -22,12 +22,17 @@ class ShoeListFragment : Fragment() {
     private val viewModel: MainActivityViewModel by activityViewModels()
     private lateinit var binding: FragmentShoeListBinding
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?): View {
 
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment using DataBindingUtil
         binding = DataBindingUtil.inflate(
-           inflater, R.layout.fragment_shoe_list, container, false)
+            inflater,
+            R.layout.fragment_shoe_list,
+            container,
+            false)
 
         // Initialize the view model and lifecycle owner
         binding.viewModel = viewModel
@@ -36,6 +41,7 @@ class ShoeListFragment : Fragment() {
         // Build and display a card view for each shoe.
         viewModel.shoeList.observe(viewLifecycleOwner, Observer {
             for (shoe in it) {
+                //Inflate the layout using DataBindingUtil
                 DataBindingUtil.inflate<ListRowBinding>(
                     layoutInflater,
                     R.layout.list_row,
@@ -51,8 +57,9 @@ class ShoeListFragment : Fragment() {
         setHasOptionsMenu(true)
 
         // Add listener for FAB, which will navigate to the detail screen so that a new shoe can be added
-        binding.floatingActionButton.setOnClickListener { view: View -> view.findNavController().navigate(
-            ShoeListFragmentDirections.actionShoeListFragmentToDetailFragment()
+        binding.floatingActionButton.setOnClickListener {
+                view: View -> view.findNavController().navigate(
+                ShoeListFragmentDirections.actionShoeListFragmentToDetailFragment()
         ) }
 
         return binding.root

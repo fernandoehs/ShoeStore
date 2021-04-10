@@ -14,12 +14,16 @@ import com.fernandoherrera.shoestore.databinding.FragmentWelcomeBinding
 class WelcomeFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment using DataBindingUtil
         val binding: FragmentWelcomeBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_welcome, container, false)
+            inflater,
+            R.layout.fragment_welcome,
+            container,
+            false)
         binding.continueButton.setOnClickListener { view: View -> findNavController().navigate(
             WelcomeFragmentDirections.actionWelcomeToInstructions()
         ) }

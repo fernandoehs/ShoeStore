@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".screens.InstructionsFragment">
 
+    <!-- Constraint Layout used in order to avoid nesting multiple horizontal and vertical list views
+    and to flatten the structure and Constraint layout flattens the hierarchy. Which increases the performance -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -26,9 +26,12 @@ class DetailFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment using DataBindingUtil
         binding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_detail, container, false
+            inflater,
+            R.layout.fragment_detail,
+            container,
+            false
         )
 
         // Initialize view model and "empty" shoe object

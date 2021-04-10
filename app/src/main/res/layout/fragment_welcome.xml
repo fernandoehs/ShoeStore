@@ -5,7 +5,8 @@
     tools:context=".screens.WelcomeFragment">
 
 
-    <!-- Constraint Layout used to avoid nesting linear layouts and more easily place the button -->
+    <!-- Constraint Layout used to avoid nesting linear layouts and more easily place the button-->
+    <!--  and Constraint layout flattens the hierarchy. Which increases the performance -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

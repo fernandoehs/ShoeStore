@@ -14,7 +14,7 @@
     </data>
 
     <!-- Constraint Layout used in order to avoid nesting multiple horizontal and vertical list views
-    and to flatten the structure -->
+    and to flatten the structure and Constraint layout flattens the hierarchy. Which increases the performance -->
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

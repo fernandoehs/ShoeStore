@@ -9,6 +9,8 @@
             type="com.fernandoherrera.shoestore.MainActivityViewModel" />
     </data>
 
+    <!-- Constraint Layout used in order to avoid nesting multiple horizontal and vertical list views
+        and to flatten the structure -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -14,12 +14,16 @@ import com.fernandoherrera.shoestore.databinding.FragmentInstructionsBinding
 class InstructionsFragment : Fragment() {
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
+        // Inflate the layout for this fragment using DataBindingUtil
         val binding: FragmentInstructionsBinding = DataBindingUtil.inflate(
-            inflater, R.layout.fragment_instructions, container, false)
+            inflater,
+            R.layout.fragment_instructions,
+            container,
+            false)
         binding.startButton.setOnClickListener {
             findNavController().navigate(
             InstructionsFragmentDirections.actionInstructionsToShoeListFragment()
